@@ -1,5 +1,5 @@
-; Muhammad Mujtaba
-; CS-117; 540040
+; Azhan Ali
+; CS-117; 546256
 ; 2k25 BESE-16B
 
 ; TESTED in ONECOMPILER ONLINE ASSEMBLER
