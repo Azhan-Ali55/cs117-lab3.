@@ -27,11 +27,11 @@
 
 
 
-                                                                                                             | Feature          | Assembly Example | Python Example | Notes |
-|------------------|------------------|----------------|-------|
-| Variable storage | Register (EAX)   | `x = 5`        |       |
-| Printing output  | `INT 21h`        | `print()`      |       |
-| Arithmetic       | `ADD AX, BX`     | `x + y`        |       |
+                                                    | Feature          | Assembly Example | Python Example |                         Notes                         |
+                                                    |------------------|------------------|----------------|-------------------------------------------------------|     
+                                                    | Variable storage | Register (EAX)   | `x = 5`        | Python handles variable types and memory automatically|
+                                                    | Printing output  | `INT 21h`        | `print()`      | Python has built in functions, so no system calls needed|
+                                                    | Arithmetic       | `ADD AX, BX`     | `x + y`        | Python uses operators directly no register managment is needed|
 
 
 
