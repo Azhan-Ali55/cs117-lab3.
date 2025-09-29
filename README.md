@@ -6,23 +6,23 @@
 
 ### **REGISTERS:**
 
-1. mov al, 12 --> Puts 12 in 8-bit AL.
-2. mov bl, 13 --> Puts 13 in 8-bit BL.
-3. mul bl --> Multiplies AL \* BL.
-4. ESI --> Holds the digit count.
+1. `mov al, 12` --> Puts 12 in 8-bit `AL`.
+2. `mov bl, 13` --> Puts 13 in 8-bit `BL`.
+3. `mul bl` --> Multiplies `AL` \* `BL`.
+4. `ESI` --> Holds the digit count.
 
 ### **INSTRUCTIONS:**
 
-1. movzx eax, ax --> Extend result in AX into EAX.
+1. movzx eax, ax --> Extend result in `AX` into `EAX`.
 2. add dl, '0' --> Converts remainder (0–9) into ASCII digit.
-3. mul bl --> Multiplies AL \* BL.
+3. mul bl --> Multiplies `AL` \* `BL`.
 
 ## **Question 2:** How is coding in Assembly different from Python?
 
 **Answer:** There are a lot of differences between Python and Assembly, because they are both completely different languages. The following are the most prominent
 
 **Assembly** is a low level language which means it is a lot harder due to it being closer to computer language than to human language. It is also very cryptic
-and one small mistake can crash the whole program. One advantage of using Assembly is that it is extremely fast due to it being very close to hardware of the computer.
+and one small mistake can crash the whole program. One advantage of using Assembly is that it is extremely fast due to it being very close to hardware of the computer. You have to manage the data in each registor of the CPU.
 
 **Python** is a high level language which means it is closer to human language and is therefore a lot easier to understand as humans. It is very close to english and therefore
 is a lot easier to understand and than debug.Obviously, one disadvantage of this is that it is much slower than Assembly, because it is not close to the hardware of the computer.
@@ -39,6 +39,11 @@ is a lot easier to understand and than debug.Obviously, one disadvantage of this
 
 | Feature          | Assembly Example | Python Example | Notes                                                          |
 | ---------------- | ---------------- | -------------- | -------------------------------------------------------------- |
-| Variable storage | Register (EAX)   | `x = 5`        | Python handles variable types and memory automatically         |
+| Variable storage | Register (`EAX`)   | `x = 5`        | Python handles variable types and memory automatically         |
 | Printing output  | `INT 21h`        | `print()`      | Python has built in functions, so no system calls needed       |
 | Arithmetic       | `ADD AX, BX`     | `x + y`        | Python uses operators directly no register managment is needed |
+
+## CREDITS
+
+> Muhammad Mujtaba: Python Calculator and README.md (Only markdown formatting)
+> Azhan Ali: Assembly Calculator and README.md
